@@ -25,10 +25,15 @@ const FlavorSlider = () => {
         },
       });
 
-      tl.to(".flavor-section", {
+      tl.to([".slider-title-container", ".slider-content-container"], {
         x: `-${scrollAmount + 1500}px`,
         ease: "power1.inOut",
-      });
+      }, 0);
+
+      tl.to(".slider-section-bg-texture", {
+        x: -250,
+        ease: "power1.inOut",
+      }, 0);
     }
 
     const titleTl = gsap.timeline({
@@ -69,27 +74,26 @@ const FlavorSlider = () => {
         {flavorlists.map((flavor) => (
           <div
             key={flavor.name}
-            className={`relative z-30 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}
+            className="lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none relative flex items-center justify-center overflow-visible"
           >
-            <img
-              src={`${import.meta.env.BASE_URL}images/${flavor.color}-bg.svg`}
-              alt=""
-              className="absolute bottom-0"
-            />
+            {/* Rotated product card container */}
+            <div className={`relative w-full h-full flex items-center justify-center z-20 ${flavor.rotation} cursor-pointer group transition-all duration-500 ease-out hover:scale-[1.03]`}>
+              <img
+                src={`${import.meta.env.BASE_URL}images/${flavor.color}-bg.svg`}
+                alt=""
+                className="absolute inset-0 w-full h-full object-fill select-none"
+              />
 
-            <img
-              src={`${import.meta.env.BASE_URL}images/${flavor.color}-drink.webp`}
-              alt=""
-              className="drinks"
-            />
+              <img
+                src={`${import.meta.env.BASE_URL}images/${flavor.color}-drink.png`}
+                alt=""
+                className="drinks z-10 select-none transition-all duration-500 ease-out group-hover:scale-[1.08] group-hover:-translate-y-3"
+              />
 
-            <img
-              src={`${import.meta.env.BASE_URL}images/${flavor.color}-elements.webp`}
-              alt=""
-              className="elements"
-            />
-
-            <h1>{flavor.name}</h1>
+              <h1 className="z-20 absolute md:bottom-10 md:left-10 bottom-5 left-5 text-milk md:text-6xl text-3xl font-semibold uppercase tracking-tighter">
+                {flavor.name}
+              </h1>
+            </div>
           </div>
         ))}
       </div>
