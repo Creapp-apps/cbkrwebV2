@@ -243,7 +243,7 @@ const NutritionSection = () => {
         <div className="flex md:justify-center items-center translate-y-5 pointer-events-auto">
           <div className="md:max-w-xs max-w-md">
             <p className="text-lg md:text-right text-balance font-paragraph">
-              Eats the worm provee todos los macro y micronutrientes que tus plantas necesitan, 
+              CBKR provee todos los macro y micronutrientes que tus plantas necesitan, 
               en la forma y el momento exactos que los solicitan, aumentando la producción 
               de terpenos y resinas de forma orgánica.
             </p>
