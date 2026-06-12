@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <g transform="translate(5, 8)">
+    <!-- Crescent Moon Icon -->
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" fill="#704e15" transform="scale(1.1) rotate(15 12 12)" />
+  </g>
+  <!-- Text "cbkr." -->
+  <text x="38" y="26" font-family="Playfair Display, Georgia, serif" font-size="20" font-weight="bold" letter-spacing="1.5" fill="#1c2024">cbkr.</text>
+</svg>

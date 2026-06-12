@@ -1,0 +1,12 @@
+<svg width="151" height="151" viewBox="0 0 151 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define a circular path inside the 151x151 box -->
+    <path id="circlePath" d="M 75.5, 75.5 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
+  </defs>
+  <!-- Rotating Text around the path -->
+  <text fill="#FAEADE" opacity="0.75" font-family="'Outfit', sans-serif" font-size="7.8" font-weight="900" letter-spacing="1.8">
+    <textPath href="#circlePath" startOffset="0%">
+      CULTIVA SUELO VIVO • METODO CBKR • CULTIVA SUELO VIVO • METODO CBKR •
+    </textPath>
+  </text>
+</svg>
